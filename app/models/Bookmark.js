@@ -82,19 +82,6 @@ bookmarkSchema.statics.findByTag = function(tags){
         })
 }
 
-
-// bookmarkSchema.statics.findByTags = function(tag1,tag2){
-//     const BookMark = this
-//     return BookMark.find({tags:{"$in":[tag1,tag2]}})
-//         .then(function(bookmark){
-//             return Promise.resolve(bookmark)
-//         })
-//         .catch(function(err){
-//             return Promise.reject(err)
-//         })
-// }
-
-
 const BookMark = mongoose.model('BookMark',bookmarkSchema)
 
 
